@@ -16,25 +16,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Project Layout" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8zq-I8-8Bw">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Project Layout" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8zq-I8-8Bw">
                                 <rect key="frame" x="20" y="112" width="374" height="97"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="97" id="2TB-8v-x8y"/>
+                                    <constraint firstAttribute="width" constant="374" id="8Tk-n0-ftx"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="R15" translatesAutoresizingMaskIntoConstraints="NO" id="tuR-ww-YXr">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="R15" translatesAutoresizingMaskIntoConstraints="NO" id="tuR-ww-YXr">
                                 <rect key="frame" x="48" y="264" width="318" height="202"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="202" id="cMF-fG-Cdd"/>
+                                    <constraint firstAttribute="width" constant="318" id="viY-W4-PXg"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8zq-I8-8Bw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="68" id="442-kd-SMm"/>
+                            <constraint firstItem="tuR-ww-YXr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="48" id="MYd-77-TWs"/>
+                            <constraint firstItem="tuR-ww-YXr" firstAttribute="top" secondItem="8zq-I8-8Bw" secondAttribute="bottom" constant="55" id="ODr-iy-LcC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tuR-ww-YXr" secondAttribute="trailing" constant="48" id="U7D-Zl-DdV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8zq-I8-8Bw" secondAttribute="trailing" constant="20" id="Wpj-ds-TBv"/>
+                            <constraint firstItem="8zq-I8-8Bw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="gYt-h4-e8R"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-386" y="9"/>
+            <point key="canvasLocation" x="294" y="-40"/>
         </scene>
     </scenes>
     <resources>
